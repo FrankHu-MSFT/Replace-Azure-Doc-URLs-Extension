@@ -1,14 +1,12 @@
-// this is the background code...
-
 // listen for our browerAction to be clicked
-chrome.tabs.onUpdated.addListener(function (tab) {
-	// for the current tab, inject the "inject.js" file & execute it
-  if (changeInfo.status == 'complete') {
-	chrome.tabs.executeScript(tab.ib, {
-		file: 'inject.js'
-	});
-    // do your things
-
-  }
+chrome.tabs.onUpdated.addListener(function (tabId , info, tab) {
+	console.log("current status = " + info.status);
+	if(info.status == 'complete'){
+		console.log("running injection");
+		setTimeout(function () {
+			chrome.tabs.executeScript(tab.tabId, { file: "jquery.js" }, function() {
+				chrome.tabs.executeScript(tab.tabId, { file: "inject.js" });
+			});
+		}, 5000);
+	}
 });
-

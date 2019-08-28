@@ -7,6 +7,6 @@ chrome.tabs.onUpdated.addListener(function (tabId , info, tab) {
 			chrome.tabs.executeScript(tab.tabId, { file: "jquery.js" }, function() {
 				chrome.tabs.executeScript(tab.tabId, { file: "inject.js" });
 			});
-		}, 2000);
+		}, 500);
 	}
 });

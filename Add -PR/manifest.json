@@ -1,9 +1,9 @@
 {
   "name": "Add -PR",
-  "version": "0.0.1",
+  "version": "0.2",
   "description": "Adds -PR to all instances of azure-docs",
   "homepage_url": "http://frankthoughts.azurewebsites.net/",
-  "icons": { "128": "AzureDocsPR.png" }, 
+  "icons": { "128": "Add-PR.png" }, 
   
    "background": {
     "scripts": [

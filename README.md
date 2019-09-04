@@ -22,7 +22,7 @@ There is a 1 minute grace period you can access the loaded page and for the inje
 
 Otherwise if you don't bring the page into focus, it won't make the change to the html. 
 
-I think it might be due to the fact I'm using JQuery and jquery might need the page to actually be accessed before running properly. So you may need to wait 1 second for the injection to change the azure-docs-pr part. Otherwise just reload the page. 
+I think it might be due to the fact I'm using JQuery and jquery might need the page to actually be accessed before running properly. So you may need to wait 1 second for the injection to change the azure-docs-pr part. Otherwise just reload the page. Or it might be because unless you actually bring the page into focus, Github doesn't actually load the page. 
 
 # Support 
 If there are any issues in regards to this sample, please file a GitHub issue. This sample is not supported by Azure Support or Microsoft.

@@ -13,5 +13,8 @@ It basically utilizes some regex to find and replace the azure-docs and adds the
 # Chrome Store Plugin Link
 https://chrome.google.com/webstore/detail/add-pr/lglkecaehnimhnaefbnienkembookfbo
 
+# Known Issues
+There is a 1 minute grace period you can access the loaded page and for the injection to work properly. After actually bringing the tab into focus, the injection will work properly otherwise it won't make the change to the html. I think it might be due to the fact I'm using JQuery and jquery might need the page to actually be accessed before running properly. So you may need to wait 1 second for the injection to change the azure-docs-pr part. Otherwise just reload the page. 
+
 # Support 
 If there are any issues in regards to this sample, please file a GitHub issue. This sample is not supported by Azure Support or Microsoft.

@@ -3,7 +3,7 @@ This extension is currently a WIP. This will modify all the URLs with azure-docs
 
 All the related chrome extension files can be found in : https://github.com/FrankHu-MSFT/Replace-Azure-Doc-URLs-Extension/tree/master/Add%20-PR
 
-All other folders are for creating images or gifs. 
+All other folders are for files related to creating images or gifs. 
 
 # Usage
 

@@ -7,7 +7,7 @@ All other folders are for files related to creating images or gifs.
 
 # Usage
 
-This will basically add -pr to the azure doc links. This plugin will onlly run on github issues. 
+This will basically add -pr to the azure doc links. This plugin will only run when you are on a github issue URL. 
 
 It basically utilizes some regex to find and replace the azure-docs and adds the -pr to the link.
 

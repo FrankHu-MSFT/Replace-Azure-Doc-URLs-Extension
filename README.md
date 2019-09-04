@@ -1,6 +1,10 @@
 # Replace-Azure-Doc-URLs-Extension
 This extension is currently a WIP. This will modify all the URLs with azure-docs and change it to azure-docs-pr
 
+All the related chrome extension files can be found in : https://github.com/FrankHu-MSFT/Replace-Azure-Doc-URLs-Extension/tree/master/Add%20-PR
+
+All other folders are for creating images or gifs. 
+
 # Usage
 
 This will basically add -pr to the azure doc links. This plugin will onlly run on github issues. 

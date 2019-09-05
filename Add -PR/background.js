@@ -67,7 +67,7 @@ chrome.tabs.onUpdated.addListener(function (tabId , info, tab) {
 			}, injectionTimeInMiliseconds); 
 			
 			// Stops the timer function after 
-			// (timeToRunInMiliseconds/injectionTimeInMiliseconds) seconds. 
+			// timeToRunInMiliseconds seconds. 
 			
 			var timedEvent = setTimeout(function() {
 				console.log("clearing interval");

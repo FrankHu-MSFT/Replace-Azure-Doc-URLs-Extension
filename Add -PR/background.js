@@ -1,6 +1,11 @@
 // listen for our browerAction to be clicked
 
 // https://stackoverflow.com/questions/8490385/chrome-extension-execute-every-x-minutes
+
+// Changelog:
+// 0.4 adding analytics code for metric handling. 
+
+
 chrome.tabs.onUpdated.addListener(function (tabId , info, tab) {
 	if(tab.url.includes("MicrosoftDocs/azure-docs/issues")){
 		console.log("current status = " + info.status);

@@ -36,8 +36,8 @@ chrome.tabs.onUpdated.addListener(function (tabId , info, tab) {
 								   if(chrome.runtime.lastError) {
 										  //console.error(chrome.runtime.lastError);
 										  if(!Boolean(analyticsRan)){
-											console.log("sending page view");
-											ga('send', 'pageview', '/action-tracked.html');
+											console.log("sending Google Analytics");
+											ga('send', 'event', 'Action-Occurred','Added-PR', 'added-pr');
 											analyticsRan = 1;
 										  }
 									}
@@ -69,8 +69,8 @@ chrome.tabs.onUpdated.addListener(function (tabId , info, tab) {
 										  //console.error(chrome.runtime.lastError);
 										  //console.log(analyticsRan);
 										  if(!Boolean(analyticsRan)){
-											console.log("sending page view");
-											ga('send', 'pageview', '/action-tracked.html');
+											console.log("sending Google Analytics");
+											ga('send', 'event', 'Action-Occurred','Added-PR', 'added-pr');
 											analyticsRan = 1;
 											clearInterval(myIntervals[0]);
 										  }

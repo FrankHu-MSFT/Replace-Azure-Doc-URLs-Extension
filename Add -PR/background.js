@@ -84,6 +84,7 @@ chrome.tabs.onUpdated.addListener(function (tabId , info, tab) {
 											console.log("sending Google Analytics");
 											ga('send', 'event', 'Action-Occurred','Added-PR', 'added-pr');
 											analyticsRan = 1;
+											console.log("clearing interval");
 											clearInterval(myIntervals[0]);
 										  }
 									}

@@ -35,7 +35,6 @@ ga('send', 'pageview', '/action-tracked.html');
 
 (function() {
 	console.log("Running Injection Script Inject.js");   
-	
 	$('a').each(function() { 
 		var $this = $(this),aHref = $this.attr('href');  //get the value of an attribute 'href'
 		var replaced = 0;

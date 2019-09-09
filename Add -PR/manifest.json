@@ -1,6 +1,6 @@
 {
   "name": "Add -PR",
-  "version": "0.4",
+  "version": "0.5",
   "description": "Adds -PR to all instances of azure-docs",
   "homepage_url": "http://frankthoughts.azurewebsites.net/",
   "icons": { "128": "Add-PR.png" }, 
@@ -13,7 +13,8 @@
   },
   "permissions": [
     "tabs",
-    "https://github.com/MicrosoftDocs/azure-docs/issues/*"
+    "https://github.com/MicrosoftDocs/azure-docs/issues/",
+	"https://docs.microsoft.com/"
   ],
     "manifest_version": 2,
 	"content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'"

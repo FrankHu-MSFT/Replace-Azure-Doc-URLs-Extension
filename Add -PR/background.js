@@ -27,7 +27,19 @@ ga('require', 'displayfeatures');
 
 chrome.tabs.onUpdated.addListener(function (tabId , info, tab) {
 	var analyticsRan = 0;
-	if(tab.url.includes("MicrosoftDocs/azure-docs/issues") && info.status == "complete"){
+	
+	// I would like to create a function so that we can iterate over all possible URLs. 
+	// Currently in the listener.
+	var isValidURL = 0;
+	var validURLs = ["https://github.com/MicrosoftDocs/azure-docs/issues/",
+					 "https://docs.microsoft.com/"];
+					 
+	for (var i = 0; i< validURLs.length; ++i){
+		if(tab.url.includes(validURLs[i])){
+			isValidURL = 1;
+		}
+	}
+	if(Boolean(isValidURL) && info.status == "complete"){
 		console.log("current status = " + info.status);
 		// We run it once for immediate loads. 
 		setTimeout(function () {

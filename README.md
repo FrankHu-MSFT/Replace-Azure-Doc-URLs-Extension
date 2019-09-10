@@ -14,6 +14,13 @@ It basically utilizes some regex to find and replace the azure-docs and adds the
 
 ![](Gifs/Replacing-PR.gif)
 
+
+It also changes the edit pen button on the azure-docs page. 
+
+
+![](Gifs/Azure-Docs-Edit-Add-PR.gif)
+
+
 # Chrome Store Plugin Link
 https://chrome.google.com/webstore/detail/add-pr/lglkecaehnimhnaefbnienkembookfbo
 

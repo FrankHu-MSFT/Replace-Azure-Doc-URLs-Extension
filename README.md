@@ -25,16 +25,14 @@ It also changes the edit pen button on the azure-docs page.
 https://chrome.google.com/webstore/detail/add-pr/lglkecaehnimhnaefbnienkembookfbo
 
 # Known Issues
-1. There is a 1 minute grace period you can access the loaded page and for the injection to work properly. After actually bringing the tab into focus, the injection will work properly. Otherwise if you don't bring the page into focus, it won't make the change to the html. 
+1. There is a 1 minute grace period you can access the loaded page and for the injection to work properly. After actually bringing the tab into focus, the injection will work properly. Otherwise if you don't bring the page into focus, it won't make the change to the html. I think it might be due to the fact I'm using JQuery and jquery might need the page to actually be accessed before running properly. So you may need to wait 1 second for the injection to change the azure-docs-pr part. Or it might be because unless you actually bring the page into focus, Github doesn't actually load the page. 
 
-I think it might be due to the fact I'm using JQuery and jquery might need the page to actually be accessed before running properly. So you may need to wait 1 second for the injection to change the azure-docs-pr part. Or it might be because unless you actually bring the page into focus, Github doesn't actually load the page. 
-
-Mitigation: just reload the page. 
+**Mitigation: just reload the page.**
 
 2. The injection continues to run untill it's been 60 seconds or you've navigated away from an issue or doc page. 
 This shouldn't affect computer performance or extension results, but is annoying nonetheless.
 
-Mitigation : Navigate to a different page.
+**Mitigation : Navigate to a different page.**
 
 # Support 
 If there are any issues in regards to this sample, please file a GitHub issue. This sample is not supported by Azure Support or Microsoft.

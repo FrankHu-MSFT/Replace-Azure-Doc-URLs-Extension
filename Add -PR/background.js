@@ -6,7 +6,7 @@
 // 0.4 adding analytics code for metric handling. 
 
 // var _AnalyticsCode = '
-
+var _AnalyticsCode = 'UA-147217527-1';
 /**
  * Below is a modified version of the Google Analytics asynchronous tracking
  * code snippet.  It has been modified to pull the HTTPS version of ga.js

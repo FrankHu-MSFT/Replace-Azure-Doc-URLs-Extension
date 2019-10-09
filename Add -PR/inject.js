@@ -34,7 +34,8 @@ ga('send', 'pageview', '/action-tracked.html');
 // https://www.optimizesmart.com/beginners-guide-to-javascript-for-google-analytics/
 
 (function() {
-	console.log("Running Injection Script Inject.js");   
+	console.log("Running Injection Script Inject.js"); 
+	console.log(window.location.href);  
 	$('a').each(function() { 
 		var $this = $(this),aHref = $this.attr('href');  //get the value of an attribute 'href'
 		var replaced = 0;
